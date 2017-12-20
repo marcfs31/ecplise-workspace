@@ -1,0 +1,15 @@
+import java.io.*;
+public class Exercici3 {
+	public static void main (String args[]) throws IOException {
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String frase;
+		
+		System.out.print("Introdueix una frase: ");
+		frase= reader.readLine();
+		
+		String frase2 = frase.replaceFirst(" ", "");
+		System.out.println(frase2);
+		
+	}
+}
+

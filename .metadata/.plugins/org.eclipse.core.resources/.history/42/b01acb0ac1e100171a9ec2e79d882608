@@ -1,0 +1,29 @@
+import java.io.*;
+public class Exercici1 {
+	public static void main (String args[]) throws IOException {
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String quantitat_str,preu_str,salir="si";
+		int quantitat,preu,total;
+		
+		do {
+			System.out.print("Introdueix una quantitat: ");
+			quantitat_str= reader.readLine();
+			quantitat = Integer.parseInt(quantitat_str);
+			
+			System.out.print("Introdueix un preu: ");
+			preu_str= reader.readLine();
+			preu = Integer.parseInt(preu_str);
+			
+			total = quantitat*preu;
+			System.out.println("TOTAL LINIA FACTURA: "+total);
+			
+			System.out.println("Vols fer un nou calcul (si/no)? ");
+			salir = reader.readLine();
+			
+			if (salir.equals("no")) {
+				break;
+			}
+		} while (salir!="no");
+	}
+}
+

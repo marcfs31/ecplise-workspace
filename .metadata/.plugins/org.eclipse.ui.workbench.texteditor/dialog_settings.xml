@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="60000" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="60000"/>
+			<item value="System.out.println(&quot;No time left&quot;);"/>
+			<item value="if(resp == result){&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos += 25;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}else{&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos -= 25;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}"/>
+			<item value="if(resp == result){&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos += (5*mult);&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}else{&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos -= 5;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}"/>
+			<item value="salir"/>
+			<item value="Runtime.getRuntime().exec(&quot;clear&quot;);"/>
+			<item value="System.out.print(&quot;\033\143&quot;);"/>
+			<item value="033"/>
+			<item value="\033"/>
+			<item value="contador"/>
+		</list>
+		<list key="replacehistory">
+			<item value="if(resp == result){&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos += (5*mult);&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}else{&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos -= 5;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}"/>
+			<item value="System.out.print(&quot;\033\143&quot;);"/>
+			<item value="Runtime.getRuntime().exec(&quot;clear&quot;);"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="338" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="1189" key="DIALOG_X_ORIGIN"/>
+		<item value="219" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

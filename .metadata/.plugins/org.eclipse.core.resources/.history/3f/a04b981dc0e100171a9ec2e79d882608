@@ -1,0 +1,21 @@
+import java.io.*;
+public class Exercici1 {
+	public static void main (String args[]) throws IOException {
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String quantitat_str,preu_str;
+		int quantitat,preu,total;
+		
+		System.out.print("Introdueix una quantitat: ");
+		quantitat_str= reader.readLine();
+		quantitat = Integer.parseInt(quantitat_str);
+		
+		System.out.print("Introdueix un preu: ");
+		quantitat_str= reader.readLine();
+		quantitat = Integer.parseInt(quantitat_str);
+		
+		System.out.print("Introdueix una quantitat: ");
+		quantitat_str= reader.readLine();
+		quantitat = Integer.parseInt(quantitat_str);
+	}
+}
+
