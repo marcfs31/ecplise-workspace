@@ -1,3 +1,4 @@
-GitRepositoriesView.GitDirectories=/home/marc/ecplise/.git\:
-GitRepositoriesView.GitDirectories.relative=/home/marc/ecplise/.git\:
+GitRepositoriesView.GitDirectories=/home/marc/eclipse-workspace/.git\:
+GitRepositoriesView.GitDirectories.relative=.git\:
+RepositorySearchDialogSearchPath=/home/marc/eclipse-workspace
 eclipse.preferences.version=1
