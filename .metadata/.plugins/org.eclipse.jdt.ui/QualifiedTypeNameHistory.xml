@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.EqualsExclude"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.concurrent.LinkedTransferQueue"/>
+<fullyQualifiedTypeName name="javax.xml.stream.util.EventReaderDelegate"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.security.auth.x500.X500Principal"/>
 </qualifiedTypeNameHistroy>

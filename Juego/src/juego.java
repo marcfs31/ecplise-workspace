@@ -36,21 +36,222 @@ public class juego {
 			System.out.println(" \\____/\\__,_|_| |_| |_|\\___||___/");
 			System.out.println("                                 ");
 			System.out.println("         Choose the game: ");
-			System.out.println("Tres en raya:1 || Genius mind:2 || Exit:3");
+			System.out.println("Tres en raya:1 || Genius mind:2 || Ahorcado:3 || Exit:4");
 			game = reader.readLine();
 			switch (game) {
 			case "1": game2 ="3Raya";
 				break;
 			case "2": game2 ="Genius";
 				break;
-			case "3": salir3="s";
+			case "3": game2 ="Ahorcado";
+				break;
+			case "4": salir3="s";
 				break;
 			default: game2 ="3Raya";
 				break;
 			}
-			
+		
 			if(salir3.equals("s")){
 				break;
+			}
+			
+			if (game2.equals("Ahorcado")) {
+				
+				System.out.println("  ___  _                             _       ");
+				System.out.println(" / _ \\| |                           | |      ");
+				System.out.println("/ /_\\ \\ |__   ___  _ __ ___ __ _  __| | ___  ");
+				System.out.println("|  _  | '_ \\ / _ \\| '__/ __/ _` |/ _` |/ _ \\ ");
+				System.out.println("| | | | | | | (_) | | | (_| (_| | (_| | (_) |");
+				System.out.println("\\_| |_/_| |_|\\___/|_|  \\___\\__,_|\\__,_|\\___/");
+				System.out.println("               Elige que hacer: ");
+				System.out.println("               Jugar:1 || Salir:2");
+				game = reader.readLine();
+				switch (game) {
+				case "1": game2 ="Ahorcado";
+					break;
+				case "2": salir4="s";
+					break;
+				default: game2 ="Ahorcado";
+					break;
+				}
+				
+				if(salir4.equals("s")){
+					break;
+				}
+				
+				//Variables
+				String letra, entrar="s";
+				char letra_char = 0,vacio='_';
+				int aciertos=0,intentos=6,tmp=0,errores=0;
+				
+				String palabras[] = {"coche","casa","arbol","planta","ordenador","cucaracha","isla","playa","campo","flor","cartera","autobus","raton",""};
+				int i_palabras = rand.nextInt(palabras.length) + 1; i_palabras--;
+				char [] palabra;
+				palabra = new char [palabras[i_palabras].length()];
+				char [] resuelta;
+				resuelta = new char [palabras[i_palabras].length()];
+				
+				//Guarda en el array palabra los caracteres de la palabra del array palabras.
+				palabras[i_palabras].getChars(0, palabras[i_palabras].length(), palabra, 0);
+				
+				//Imprimir la cantidad de caracteres de la palabra con guiones
+				for (int i = 0; i < resuelta.length; i++) {
+					resuelta[i] = vacio;
+					System.out.print(resuelta[i]+" ");
+				}
+				
+				//Bucle del juego
+				while (entrar == "s") {
+					//Pedir la letra o palabra
+					System.out.println();
+					
+					System.out.print("Pon una letra: ");
+					letra = reader.readLine();
+					letra = letra.toLowerCase();
+					
+					if (letra.length() > 1) {
+						if (letra.equals(palabras[i_palabras])) {
+							System.out.println("Has ganado");
+							break;
+						}else {
+							System.out.println("Palabra incorrecta");
+						}
+					}else {
+						letra_char = letra.charAt(0);
+					}
+					
+					tmp = aciertos;
+					
+					//Evaluar si la letra esta en la palabra
+					for (int i = 0; i < palabra.length; i++) {
+						if (palabra[i] == letra_char) {
+							resuelta[i] = letra_char;
+							aciertos++;
+						}
+					}
+					
+					//Comprobar si ha acertado algun caracter
+					if (tmp == aciertos) {
+						intentos--;
+						errores++;
+						System.out.println("Te quedan "+intentos+" intentos");
+					}
+					
+					//Dibujar el ahorcado
+					switch (errores) {
+					case 1:
+						System.out.println();
+						System.out.println(" ____");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|   ***");
+						System.out.println("|  *   *");
+						System.out.println("|   *** ");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|________");
+						break;
+					case 2:
+						System.out.println();
+						System.out.println(" ____");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|   ***");
+						System.out.println("|  *   *");
+						System.out.println("|   *** ");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|________");
+						break;
+					case 3:
+						System.out.println();
+						System.out.println(" ____");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|   ***");
+						System.out.println("|  *   *");
+						System.out.println("|   *** ");
+						System.out.println("|   /|");
+						System.out.println("|  / |");
+						System.out.println("|    |");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|________");
+						break;
+					case 4:
+						System.out.println();
+						System.out.println(" ____");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|   ***");
+						System.out.println("|  *   *");
+						System.out.println("|   *** ");
+						System.out.println("|   /|\\");
+						System.out.println("|  / | \\");
+						System.out.println("|    |");
+						System.out.println("|");
+						System.out.println("|");
+						System.out.println("|________");
+						break;
+					case 5:
+						System.out.println();
+						System.out.println(" ____");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|   ***");
+						System.out.println("|  *   *");
+						System.out.println("|   *** ");
+						System.out.println("|   /|\\");
+						System.out.println("|  / | \\");
+						System.out.println("|    |");
+						System.out.println("|   /");
+						System.out.println("|  /");
+						System.out.println("|________");
+						break;
+					case 6:
+						System.out.println();
+						System.out.println(" ____");
+						System.out.println("|    |");
+						System.out.println("|    |");
+						System.out.println("|   ***");
+						System.out.println("|  *   *");
+						System.out.println("|   *** ");
+						System.out.println("|   /|\\");
+						System.out.println("|  / | \\");
+						System.out.println("|    |");
+						System.out.println("|   / \\");
+						System.out.println("|  /   \\");
+						System.out.println("|________");
+						break;
+					default:
+						break;
+					}
+					
+					//Imprimir array despues de añadir las letras o guiones
+					for (int i = 0; i < resuelta.length; i++) {
+						System.out.print(resuelta[i]+" ");
+					}
+								
+					//Comprobar que los intentos no sean 0
+					if (intentos == 0) {
+						System.out.println();
+						System.out.println("Has perdido");
+						break;
+					}
+					
+					//Comprobar si ha ganado
+					if (aciertos == palabra.length) {
+						entrar = "n";
+						System.out.println();
+						System.out.println("Has ganado");
+					}
+				}
 			}
 			//3 en raya
 			//Arreglar boton atrás

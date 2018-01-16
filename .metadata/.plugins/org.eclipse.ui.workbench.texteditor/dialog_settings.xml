@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="a" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="a"/>
 			<item value="salir4"/>
 			<item value="60000"/>
 			<item value="System.out.println(&quot;No time left&quot;);"/>
@@ -21,6 +22,7 @@
 			<item value="contador"/>
 		</list>
 		<list key="replacehistory">
+			<item value="nota"/>
 			<item value="if(resp == result){&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos += (5*mult);&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}else{&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;puntos -= 5;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;}"/>
 			<item value="System.out.print(&quot;\033\143&quot;);"/>
 			<item value="Runtime.getRuntime().exec(&quot;clear&quot;);"/>
