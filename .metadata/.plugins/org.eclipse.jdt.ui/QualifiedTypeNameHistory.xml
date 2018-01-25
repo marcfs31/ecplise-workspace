@@ -2,9 +2,11 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.EqualsExclude"/>
 <fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.concurrent.LinkedTransferQueue"/>
 <fullyQualifiedTypeName name="javax.xml.stream.util.EventReaderDelegate"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.security.auth.x500.X500Principal"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="javax.security.auth.callback.TextOutputCallback"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
